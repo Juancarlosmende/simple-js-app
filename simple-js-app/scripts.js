@@ -1,7 +1,21 @@
-let myName = 'carlos';
-document.write(myName);
+let pokemonList = [ //my pokemon list
+    {
+        name: 'Krookodile',
+        type:['dark','ground'],
+        height: 2
+    },
 
-let favoriteFood = pizza;
-document.write(favoriteFood);
+    {
 
-alert('hello world');
+        name:'Machoke',
+        type:['fighting'],
+        height: 2
+    },
+
+    {
+       name:'Golem',
+       type:['rock','ground'],
+       height: 1
+
+    },
+];
