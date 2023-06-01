@@ -1,5 +1,5 @@
 let pokemonRepository = (function () {
-  let pokemonList = [ //my pokemon list
+  let repository = [ //my pokemon list
       {
           name: 'Krookodile',
           type:['dark','ground'],
@@ -20,43 +20,58 @@ let pokemonRepository = (function () {
   
       },
   ];
-  
-  function add (pokemon){
-    pokemonList.push(pokemon);
-  }
-  function getAll() {
-    return pokemonList;
-  }
-  return {
-    add:add,
-    getAll: getAll
-  }
-  }) ();
-  
-  function listPokemon (pokemon) {
-    document.write(
-      pokemon.name
-      +'<br>'
-    )
-    if(pokemon.type.length > 1)
-    document.write(
-      (Types: {pokemon.type[0]}, {pokemon.type[1]}) - wow!! That pokemon has two types!
-    )
-  } else {
-    document.write(
-      (Type:{pokemon.type})
-    )
-  }
-  
-  document.write('<br>')
-  
-  if(pokemon.size > 1.5 ){
-      document.write("this is a big pokemon!!")
-    } else if (pokemon.size > 0.5 && pokemon.size < 1.5){
-      document.write("this is an average pokemon");
-    }else {
-      document.write("this is a small pokemon")
+  function add(pokemon){
+    if (
+      typeof pokemon ==='object'&&
+      'name' in pokemon &&
+      'size' in pokemon &&
+      'type' in pokemon
+    ) {
+      repository.push(pokemon);
+    } else {
+      console.log('pokemon is not correct');
     }
-  
-  pokemonRepository.getAll().forEach(listPokemon);
+  }  
+
+  function getAll() {
+    return repository;
+  }
+  function addListItem(pokemon){
+    let pokemonList = document.querySelector('.pokemon-list');
+    let listpokemon = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = pokemon.name;
+    button.classList.add('button-class');
+    listpokemon.appendChild(button);
+    pokemonList.appendChild(listpokemon);
+    button.addEventListener('click',function(){
+      showDetails(pokemon);
+      });
+
+  function showDetails(item){
+    pokemonRepository.showDetails(item).then(function (){
+      showPokemonDetails(item);
+    })
+    console.log('pokemon correct')
+
+
+  }
+
+  return {
+    add: add,
+    getAll: getAll,
+    addListItem: addListItem
+    showDetails: showDetails,
+  };
+ 
+  }) ();
+
+pokemonRepository.add({name:'charmander',
+size:2, type: ['blaze'] });
+
+console.log(pokemonRepository.getAll());
+
+  pokemonRepository.getAll().forEach(function (pokemon) {
+   pokemonRepository.addListItem(pokemon);
+  });
   
