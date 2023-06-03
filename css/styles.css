@@ -1,0 +1,33 @@
+.button-class {
+    background-color:#00c3ff;
+    border: none;
+    color:#e6e6fa;
+    padding:18px 36px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 6px 8px;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8;
+    cursor:pointer;
+    background-color:hwb(113 38% 35%);
+    color:black;
+    border:3px solid rgb(7, 17, 7) ;
+}
+h1 {
+font-size: 100px;
+text-align:center;
+}
+
+body{
+
+
+    text-align: center;
+}
+ul{
+
+    list-style-type:none;
+    font-weight: bold;
+    font-size:30px;
+}
