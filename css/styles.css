@@ -1,4 +1,4 @@
-.button-class {
+.btn-block {
     background-color:#00c3ff;
     border: none;
     color:#e6e6fa;
@@ -21,9 +21,15 @@ text-align:center;
 }
 
 body{
-
-
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     text-align: center;
+    padding: none;
+  list-style-type: none;
+  display: flex; 
+  flex-wrap: wrap;
+  display: grid; 
+  display: inline-block;
 }
 ul{
 
@@ -31,3 +37,99 @@ ul{
     font-weight: bold;
     font-size:30px;
 }
+.pokemon-list {
+    padding: none;
+    list-style-type: none;
+    display: flex; 
+    flex-wrap: wrap;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+
+.list-group-item{
+    display: inline-block;
+    padding: 0;
+    border: none;
+  }
+
+.list-group-item:hover {
+    background-color: #f2f2f2;
+  }
+
+  @media all and (max-width: 1080px) {
+
+    .pokemon-list{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+  
+    .search-list {
+        grid-template-columns: 1fr;
+    }
+  
+  }
+  
+
+  .modal-content {
+    background-color: #227253;
+  }
+  
+  .modal-title {
+    font-size: 2rem;
+  }
+  
+  .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pokemon-height {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .pokemon-image {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 20px;
+  }
+  
+
+  footer {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .button {
+    width: 100%;
+    height: 100%;
+  }
+  .image-container{
+    float: right;
+  }
+
+  .pokemon-image{
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+  }
+  .modal-is-visible {
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.747);
+    z-index: 999; 
+    overflow: auto; 
+    display: inline-block;
+    text-align: center;
+  
+   }  
