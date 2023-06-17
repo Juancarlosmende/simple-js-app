@@ -1,165 +1,19 @@
-.btn-block {
-<<<<<<< Updated upstream
-    background-color:#00c3ff;
-    border: none;
-    color:#e6e6fa;
-    padding:18px 36px;
-    text-align:center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 6px 8px;
-    -webkit-transition-duration: 0.8s;
-    transition-duration: 0.8;
-    cursor:pointer;
-    background-color:hwb(113 38% 35%);
-    color:black;
-    border:3px solid rgb(7, 17, 7) ;
-=======
-    padding: none;
-    list-style-type: none;
-    display: flex; 
-    flex-wrap: wrap;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 50px;
-    text-align: center;
-    justify-content: center;
->>>>>>> Stashed changes
-}
-h1 {
-font-size: 100px;
-text-align:center;
-}
-nav{
-  background-color:#fff;
-}
-.navbar-brand {
-  font-size: 2rem;
-}
-
-body{
-<<<<<<< Updated upstream
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    text-align: center;
-    padding: none;
-  list-style-type: none;
-  display: flex; 
-  flex-wrap: wrap;
-  display: grid; 
-  display: inline-block;
-=======
+body {
   margin: 20px;
   padding: 10px;  
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
->>>>>>> Stashed changes
 }
-ul{
 
-  list-style-type:none;
-  font-weight: bold;
-  font-size:30px;
+nav {
+  background-color: #fff;
 }
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
 .pokemon-list {
-<<<<<<< Updated upstream
-    padding: none;
-    list-style-type: none;
-    display: flex; 
-    flex-wrap: wrap;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 50px;
-    text-align: center;
-    justify-content: center;
-  }
-
-.list-group-item{
-    display: inline-block;
-    padding: 0;
-    border: none;
-  }
-
-.list-group-item:hover {
-    background-color: #f2f2f2;
-  }
-
-  @media all and (max-width: 1080px) {
-
-    .pokemon-list{
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-    }
-  
-    .search-list {
-        grid-template-columns: 1fr;
-    }
-  
-  }
-  
-
-  .modal-content {
-    background-color: #227253;
-  }
-  
-  .modal-title {
-    font-size: 2rem;
-  }
-  
-  .modal-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .pokemon-height {
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-  
-  .pokemon-image {
-    max-width: 300px;
-    max-height: 300px;
-    margin-bottom: 20px;
-  }
-  
-
-  footer {
-    background-color: #ccc;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .button {
-    width: 100%;
-    height: 100%;
-  }
-  .image-container{
-    float: right;
-  }
-
-  .pokemon-image{
-    display: inline-block;
-    height: 250px;
-    width: 250px;
-  }
-  .modal-is-visible {
-    position: fixed;
-    padding: 20px;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.747);
-    z-index: 999; 
-    overflow: auto; 
-    display: inline-block;
-    text-align: center;
-  
-   }  
-=======
   padding: none;
   list-style-type: none;
   display: flex; 
@@ -176,15 +30,15 @@ ul{
   padding: 0;
   border: none;
 }
-
 .list-group-item:hover {
-  background-color: #79b8e2;
+  background-color: #f2f2f2;
 }
-.list-group-item img{
+
+.list-group-item img {
   width: 75px;
   height: 75px;
-  object-fit:contain;
-  margin-right:10px;
+  object-fit: contain;
+  margin-right: 10px;
 }
 
 @media all and (max-width: 1080px) {
@@ -194,12 +48,15 @@ ul{
       gap: 40px;
   }
 
+  .search-list {
+      grid-template-columns: 1fr;
+  }
 
 }
 
 
 .modal-content {
-  background-color: #227253;
+  background-color: #fff;
 }
 
 .modal-title {
@@ -223,39 +80,13 @@ ul{
   margin-bottom: 20px;
 }
 
-
 footer {
   background-color: #ccc;
   padding: 20px;
   text-align: center;
 }
 
-.button {
+.btn {
   width: 100%;
   height: 100%;
 }
-.image-container{
-  float: right;
-}
-
-.pokemon-image{
-  display: inline-block;
-  height: 250px;
-  width: 250px;
-}
-.modal-is-visible {
-  position: fixed;
-  padding: 20px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.747);
-  z-index: 999; 
-  overflow: auto; 
-  display: inline-block;
-  text-align: center;
-
- }  
->>>>>>> Stashed changes
