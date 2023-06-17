@@ -18,10 +18,8 @@ nav {
 .pokemon-list {
   padding: none;
   list-style-type: none;
-  /*----Start grid fallback----*/
   display: flex; 
   flex-wrap: wrap;
-  /*----End grid fallback----*/
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
@@ -44,7 +42,6 @@ nav {
   object-fit: contain;
   margin-right: 10px;
 }
-/*------RESPONSIVE-------*/
 
 @media all and (max-width: 1080px) {
 
